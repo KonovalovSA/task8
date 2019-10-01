@@ -1,0 +1,401 @@
+#svetofor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url("../jpeg/crossroad1.png");
+  width: 1225px;
+  height: 793px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#roadSign {
+  position: absolute;
+  left: 160px;
+  top: 480px;
+}
+
+.girl1L {
+  position: absolute;
+  left: 972px;
+  top: 380px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.girl1CrossingLeft {
+  animation-name: crossingLeft1;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes crossingLeft1 {
+  from {
+    /* transform: translate(0px); */
+  }
+  50% {
+    transform: translate(-400px, 170px);
+  }
+  100% {
+    transform: translate(-400px, 170px) scaleX(-1);
+  }
+}
+
+.girl1R {
+  position: absolute;
+  left: 572px;
+  top: 550px;
+}
+
+.girl1CrossingRight {
+  animation-name: crossingRight1;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes crossingRight1 {
+  from {
+    /* transform: translate(0px); */
+  }
+  50% {
+    transform: translate(400px, -170px);
+  }
+  100% {
+    transform: translate(400px, -170px) scaleX(-1);
+  }
+}
+
+.girl2L {
+  position: absolute;
+  left: 700px;
+  top: 74px;
+}
+
+.girl2CrossingLeft {
+  animation-name: crossingLeft2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes crossingLeft2 {
+  from {
+    /* transform: translate(0px); */
+  }
+  50% {
+    transform: translate(270px, 210px);
+  }
+  100% {
+    transform: translate(270px, 210px) scaleX(-1);
+  }
+}
+
+.girl2R {
+  position: absolute;
+  left: 970px;
+  top: 284px;
+}
+
+.girl2CrossingRight {
+  animation-name: crossingRight2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes crossingRight2 {
+  from {
+    /* transform: translate(0px); */
+  }
+  50% {
+    transform: translate(-270px, -210px);
+  }
+  100% {
+    transform: translate(-270px, -210px) scaleX(-1);
+  }
+}
+
+.redCarLeft {
+  position: absolute;
+  left: 1280px;
+  top: -20px;
+}
+
+.carRideLeft {
+  animation-name: rideLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rideLeft {
+  to {
+    transform: translate(-1500px, 540px);
+  }
+}
+
+.redCarDown {
+  position: absolute;
+  left: -170px;
+  top: -150px;
+}
+
+.carRideDown {
+  animation-name: rideDown;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rideDown {
+  to {
+    transform: translate(1040px, 950px);
+  }
+}
+
+.yellowCarUp {
+  position: absolute;
+  left: 1120px;
+  top: 800px;
+}
+
+.carRideUp {
+  animation-name: rideUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rideUp {
+  to {
+    transform: translate(-1100px, -900px);
+  }
+}
+
+.yellowCarRight {
+  position: absolute;
+  left: -230px;
+  top: 630px;
+}
+
+.carRideRight {
+  animation-name: rideRight;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rideRight {
+  to {
+    transform: translate(1500px, -570px);
+  }
+}
+
+#home {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+#uplight {
+  position: absolute;
+  left: 577px;
+  top: 14px;
+  width: 78px;
+  height: 174px;
+  background-image: url(../jpeg/leftlight.png);
+}
+#leftlight {
+  position: absolute;
+  left: 190px;
+  top: 135px;
+  width: 78px;
+  height: 174px;
+  background-image: url(../jpeg/leftlight.png);
+}
+
+#rightlight {
+  position: absolute;
+  left: 865px;
+  top: 235px;
+  width: 78px;
+  height: 174px;
+  background-image: url(../jpeg/rightlight.png);
+}
+
+#downlight {
+  position: absolute;
+  left: 468px;
+  top: 373px;
+  width: 78px;
+  height: 174px;
+  background-image: url(../jpeg/downlight.png);
+}
+
+/* Верхний светофор */
+
+.greenLightUpLeft {
+  position: absolute;
+  left: 10px;
+  top: 118px;
+}
+
+.yellowLightUpLeft {
+  position: absolute;
+  left: 10px;
+  top: 71px;
+}
+
+.redLightUpLeft {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+
+.greenLightUpRight {
+  position: absolute;
+  left: 37px;
+  top: 120px;
+}
+
+.yellowLightUpRight {
+  position: absolute;
+  left: 37px;
+  top: 75px;
+}
+
+.redLightUpRight{
+  position: absolute;
+  left: 37px;
+  top: 30px;
+}
+
+
+/* Левый светофор */
+
+.greenLightLeftLeft {
+  position: absolute;
+  left: 10px;
+  top: 118px;
+}
+
+.yellowLightLeftLeft {
+  position: absolute;
+  left: 10px;
+  top: 71px;
+}
+
+.redLightLeftLeft {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+
+.greenLightLeftRight {
+  position: absolute;
+  left: 37px;
+  top: 120px;
+}
+
+.yellowLightLeftRight {
+  position: absolute;
+  left: 37px;
+  top: 75px;
+}
+
+.redLightLeftRight{
+  position: absolute;
+  left: 37px;
+  top: 30px;
+}
+
+
+/* Нижний светофор */
+
+.greenLightDownLeft {
+  position: absolute;
+  left: 10px;
+  top: 118px;
+}
+
+.yellowLightDownLeft {
+  position: absolute;
+  left: 10px;
+  top: 71px;
+}
+
+.redLightDownLeft {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+
+.greenLightDownRight {
+  position: absolute;
+  left: 37px;
+  top: 120px;
+}
+
+.yellowLightDownRight {
+  position: absolute;
+  left: 37px;
+  top: 75px;
+}
+
+.redLightDownRight{
+  position: absolute;
+  left: 37px;
+  top: 30px;
+}
+
+
+/* Правый светофор */
+
+.greenLightRightLeft {
+  position: absolute;
+  left: 10px;
+  top: 118px;
+}
+
+.yellowLightRightLeft {
+  position: absolute;
+  left: 10px;
+  top: 71px;
+}
+
+.redLightRightLeft {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+
+.greenLightRightRight {
+  position: absolute;
+  left: 37px;
+  top: 120px;
+}
+
+.yellowLightRightRight {
+  position: absolute;
+  left: 37px;
+  top: 75px;
+}
+
+.redLightRightRight{
+  position: absolute;
+  left: 37px;
+  top: 30px;
+}
